@@ -1,0 +1,191 @@
+﻿
+
+.col-1 {
+    width: 8.3333%;
+}
+
+.col-2 {
+    width: 16.6666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-5 {
+    width: 41.6666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333%;
+}
+
+.col-8 {
+    width: 66.6666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333%;
+}
+
+.col-11 {
+    width: 91.6666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.cl-gap {
+    margin: 0 -15px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pd-gap {
+    padding: 0 15px;
+}
+
+.container1 {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+.cart-details{
+    margin-bottom: 50px;
+    min-height:500px;
+}
+.container-shopping-cart {
+    padding-top: 40px;
+}
+
+.cart_head_info {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-info {
+    border: 1px solid #ccc;
+}
+
+.cart_body_info {
+    padding: 20px 15px;
+}
+
+    .cart_body_info img {
+        width: 120px;
+        height: 120px;
+    }
+
+.cart_quantity {
+    display: flex;
+    flex-direction: row;
+}
+
+.qty_input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+}
+
+input {
+    outline: none;
+}
+
+.quantity {
+    display: flex;
+    width: 80px;
+}
+
+.quantity_btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+.btn_delete{
+    width:100%;
+    height:100%;
+}
+.cart_control{
+    align-items: center;
+}
+.col-2 > button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* total-price */
+
+.cart__title_right {
+    margin-bottom: 20px;
+}
+
+.cart_price {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 20px;
+    /* background-color: antiquewhite; */
+}
+
+.purchase-button {
+    width: 150px;
+    height: 25px;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.cart__products_total_count,
+.cart__order_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__order_total {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.purchase_button {
+    display: block;
+    margin: 0 auto;
+}
+
+.cart__buttons_right button {
+    background-color: #CDBC7A;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}

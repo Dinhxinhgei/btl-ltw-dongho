@@ -1,0 +1,292 @@
+﻿.col-1 {
+    width: 8.3333%;
+}
+
+.col-2 {
+    width: 16.6666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-5 {
+    width: 41.6666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333%;
+}
+
+.col-8 {
+    width: 66.6666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333%;
+}
+
+.col-11 {
+    width: 91.6666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+.cl-gap{
+    margin:0 -15px;
+}
+.pd-gap{
+    padding:0 15px;
+}
+.main-content{
+    margin-top: 20px;
+}
+.container2{
+    margin: 0 auto;
+    padding: 0 15px;
+    width:100%;
+    max-width:1400px;
+}
+/*quyền lợi*/
+.quyen-loi {
+    text-align: center;
+}
+    .quyen-loi li {
+        width: 30%;
+        display: inline-block;
+        font-size: 80%;
+        font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    }
+/*Gợi ý cho bạn*/
+.recommend{
+    padding: 40px 40px;
+}
+.recommend h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: burlywood;
+    font-size: 30px;
+}
+.recommend_gia h4,
+.recommend_gia p{
+    text-align: left !important;
+}
+.recommend_gia h4 {
+    color: black;
+    font-size: 16px !important;
+}
+.recommend h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: burlywood;
+    font-size: 30px;
+    padding-top: 160px;
+}
+
+.recommend h1 {
+    padding-top: 350px;
+}
+
+.recommend p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.brand {
+    text-align: center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    color: dimgrey;
+}
+
+/*promo banners*/
+.left {
+    width: 45%;
+    height: 300px;
+    background: url('img/hublot logo nam.jpg');
+    float: left;
+/*    margin-left: 3%;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+    .left .p_dongho {
+        margin: 80px 0px 0px 25px;
+        position: absolute;
+        color: white;
+        line-height: 2.1;
+    }
+
+        .left .p_dongho h2 {
+            font-size: 20px;
+        }
+
+        .left .p_dongho h1 {
+            font-size: 25px;
+        }
+
+.right {
+    margin: 0 0 0 6%;
+    width: 45%;
+    height: 300px;
+    background: url('img/hublot logo nu.jpg');
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+    .right .p_dongho {
+        margin: 80px 0px 0px 25px;
+        position: absolute;
+        color: white;
+        line-height: 2.1;
+    }
+
+        .right .p_dongho h2 {
+            font-size: 20px;
+        }
+
+        .right .p_dongho h1 {
+            font-size: 25px;
+        }
+
+/*promobanner-text-animation*/
+.p_dongho h1 {
+    overflow: hidden;
+    white-space: nowrap; /* giữ content ko bị lệch dòng */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/*typing effect*/
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 200px;
+    }
+}
+/*banner mid (home.aspx)*/
+.banner-mid {
+    margin: auto;
+    width: 100%;
+    height: 550px;
+}
+/*Listsp*/
+
+.list-align {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /*justify-content: center;*/ /*align columns to center*/
+    /*display: flex;
+    flex-wrap:wrap;*/
+}
+
+.columns {
+    color: black;
+    margin-bottom: 30px;
+    display: inline-block;
+  
+}
+
+    .columns .thumbnail_align {
+        text-align: center;
+    }
+
+.recommend_gia {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.columns:hover {
+    box-shadow: 3px 3px 3px 2px lightgray;
+    transform: scale(1.05);
+}
+
+#recommenDW {
+    margin-bottom: 20px;
+}
+
+.recommend_gia {
+    margin-bottom: 20px;
+}
+
+/*sort*/
+.sort {
+    float: left;
+    overflow: hidden;
+}
+
+    .sort .sort-btn {
+        font-size: 12px;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        background-color: darkgray;
+    }
+
+    .sort:hover .sort-btn {
+        background-color: lightgray;
+        color: black;
+    }
+
+.sort-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+    .sort-content a {
+        font-size: 12px;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .sort-content a:hover {
+            background-color: lightgray;
+        }
+
+.sort:hover .sort-content {
+    display: block;
+}
+
+table {
+    margin-top: 20px;
+    border: solid;
+    text-align: center;
+}
+.anh{
+    width:100%;
+    height:550px;
+}

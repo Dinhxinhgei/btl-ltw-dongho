@@ -1,0 +1,243 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Watch.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css"/>
+    <link rel="stylesheet" href="/Home.css"/>
+    <link rel="stylesheet" href="/login.css" />
+    <link rel="stylesheet" href="/chitietsanpham.css" />
+    <link rel="stylesheet" href="/Giohang.css" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+        
+        <div id="header">
+            <div class="container-all-header">
+            <!-- top-menu -->
+            <div class="top-header flex">
+                <!-- navbars-res -->
+                <div class="menu-bars">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+                <div id="Side-nav" class="menu-bars-res">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <input class="search-input-navbars" type="text" placeholder="Search..."/>
+                    <a href="#">TRANG CHỦ</a>
+                    <a href="#">ĐỒNG HỒ NAM</a>
+                    <a href="#">ĐỒNG HỒ NỮ</a>
+                    <a href="#">PHỤ KIỆN</a>
+                    <a href="#">THƯƠNG HIỆU</a>
+                    <a href="#">LIÊN HỆ</a>
+                    <a href="#">ĐĂNG NHẬP</a>
+                </div>
+                <!-- end-nav-bars -->
+                <div class="logo">
+                    <a href="WebForm1.aspx">
+                        <img src="./img/logo.png">
+                    </a>
+                </div>
+                <div class="header-search">
+                    <div class="header-search-container">
+                        <form action="Sanpham.aspx" method="get">
+                            <input type="text" name="search" placeholder="Tìm kiếm" class="search-input"/>
+                            <button type="submit" class="search-btn">
+                                    <i class="ti-search"></i>
+                                </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- search-res -->
+                <div class="search-res">
+
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input">
+                            <input type="text" placeholder="Search" id="mysearch"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="header-contact flex">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p class="contact-title">HOTLINE:</p>
+                        <p class="contact-details">09 03948 9999</p>
+                    </div>
+                </div>
+                <a href="Giohang.aspx" class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart__count" id="cartCount" runat="server">0</span>
+                </a>
+            </div>
+        </div>
+        <!-- menu -->
+        <div id="menu">
+            <ul>
+                 <li><a href="WebForm1.aspx">TRANG CHỦ</a></li>
+                <li><a href="Sanpham.aspx?type=Men">ĐỒNG HỒ NAM</a></li>
+                <li><a href="Sanpham.aspx?type=Women">ĐỒNG HỒ NỮ</a></li>
+                <li><a href="#">PHỤ KIỆN</a></li>
+                <li><a href="#">THƯƠNG HIỆU</a></li>
+                <li><a href="#footer">LIÊN HỆ</a></li>
+                <li id="dnSession" runat="server"><a href="login.aspx">ĐĂNG NHẬP</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <footer id="footer">
+        <div class="container1">
+            <div class="container-footer">
+                <div class="contact-us footer-content has-drop">
+                    <h3 class="footer-title">Liên Hệ
+                        <i class="fas fa-angle-right footer-title-icon"></i>
+                    </h3>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="ti-location-pin"></i><span class="size-details">Số 55 Trung Kính,Cầu Giấy,Hà Nội</span>
+                        </li>
+                        <li><i class="fas fa-phone-alt"></i><span class="size-details">0222-222-222</span></li>
+                        <li><i class="ti-mobile"></i><span class="size-details">1800.6005</span></li>
+                        <li><i class="ti-email"></i><span class="size-details">danielwt@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="products-us footer-content has-drop">
+                    <h3 class="footer-title">Sản Phẩm
+                        <i class="fas fa-angle-right footer-title-icon"></i>
+                    </h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="">
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Tất cả đồng hồ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Tất cả phụ kiện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Dây đồng hồ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Cửa hàng / Stores</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help-us footer-content has-drop">
+                    <h3 class="footer-title">Hỗ Trợ
+                        <i class="fas fa-angle-right footer-title-icon"></i>
+                    </h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="">
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Chính sách bảo hành</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Chính sách đổi trả</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Chính sách bảo mật</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Chính sách vận chuyển</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+
+                                <i class="ti-arrow-circle-right"></i>
+                                <span class="size-details">Chính sách thanh toán</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join-us">
+                    <h3>Tham Gia Cùng Chúng Tôi</h3>
+                    <p class="size-details">Đăng ký nhận bản tin của chúng tôi để là người đầu tiên biết về tin tức mới nhất và ưu đãi độc quyền.</p>
+                    <div class="footer__mail">
+                        <form action="#" method="get">
+                            <input type="text" name="mail" placeholder="Enter Email" class="mail__input"/>
+                            <button type="submit" class="mail__btn">SEND</button>
+                        </form>
+                        <!-- <p class="alert">Invalid email address.</p> -->
+                    </div>
+                    <div class="social-list">
+                        <a href="https://facebook.com/"><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-pinterest"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href=" #" class="footer-copyright">
+                    <span>© 2022 - Ecommerce software by PrestaShop™ </span>
+                </a>
+                <div class="footer-payment">
+                    <a href="#" class="footer-payment-item">
+                        <img src="./img/master_card.png"/>
+                    </a>
+                    <a href="#" class="footer-payment-item">
+                        <img src="./img/western_union.png"/>
+                    </a>
+                    <a href="#" class="footer-payment-item">
+                        <img src="./img/american_express.png"/>
+                    </a>
+                    <a href="#" class="footer-payment-item">
+                        <img src="./img/visa.png"/>
+                    </a>
+                    <a href="#" class="footer-payment-item">
+                        <img src="./img/world_pay.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" id="scroll-to-top" class="scroll-to-top" title="Go to top">
+            <i class="ti-angle-double-up"></i>
+        </a>
+
+    </footer>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./Home.js"></script>
+   
+</body>
+</html>
